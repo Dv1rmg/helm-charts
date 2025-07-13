@@ -11,7 +11,7 @@ prometheus:
   enabled: true
   service:
     type: NodePort
-    nodePort: 9090
+    nodePort: 30001
   ingress:
     enabled: false
 
@@ -19,6 +19,6 @@ alertmanager:
   enabled: true
   service:
     type: NodePort
-    nodePort: 9091
+    nodePort: 30002
   ingress:
     enabled: false
