@@ -1,0 +1,24 @@
+grafana:
+  enabled: true
+  service:
+    type: NodePort
+    nodePort: 30003
+  adminPassword: admin
+  ingress:
+    enabled: false
+
+prometheus:
+  enabled: true
+  service:
+    type: NodePort
+    nodePort: 30004
+  ingress:
+    enabled: false
+
+alertmanager:
+  enabled: true
+  service:
+    type: NodePort
+    nodePort: 30005
+  ingress:
+    enabled: false
